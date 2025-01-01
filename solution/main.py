@@ -42,6 +42,8 @@ def compute_amazing_solution(
     :return: The x, y and angle of the gripper
     """
     part_mask_path = part_image_path.with_name(f"{part_image_path.stem}_mask.png")
+    ##  This is a work in progress, the path needs to be adjusted 
+    print(f"#45566 Part Mask Path: {part_mask_path}")
     _, part_mask_coords = load_image_and_mask(part_image_path, part_mask_path)
     part_center = calculate_center(part_mask_coords)
     return part_center[0], part_center[1], 0
