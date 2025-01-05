@@ -167,3 +167,4 @@ cython_debug/
 
 # MacOS
 .DS_Store
+/evaluate/tasks.csv
